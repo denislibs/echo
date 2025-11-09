@@ -6,4 +6,5 @@ coverage
 .idea
 .vscode
 *.tsbuildinfo
+scripts/.restore-deps.json
 
