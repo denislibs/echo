@@ -8,9 +8,9 @@ interface VitePlugin {
   warn?: (message: string) => void;
 }
 
-export function EchoCompiler(): VitePlugin {
+export function ArcJsCompiler(): VitePlugin {
   return {
-    name: 'echo-compiler',
+    name: 'arc.js-compiler',
     enforce: 'pre',
     transform(code: string, id: string) {
       // Only process files that match component pattern

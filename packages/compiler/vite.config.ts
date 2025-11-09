@@ -8,13 +8,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'EchoCompiler',
+      name: 'ArcJsCompiler',
       fileName: 'index',
       formats: ['es'],
     },
     sourcemap: true,
     rollupOptions: {
-      external: ['@echo/reactivity'],
+      external: ['@arc.js/reactivity'],
       output: {
         preserveModules: false,
       },

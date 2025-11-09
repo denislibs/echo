@@ -8,7 +8,7 @@ interface GenerateOptions {
 export function generateCode(ast: TemplateNode[], _options: GenerateOptions): string {
   const lines: string[] = [];
 
-  lines.push("import { signal } from '@echo/reactivity';");
+  lines.push("import { signal } from '@arc.js/reactivity';");
   lines.push('');
   lines.push('export function render(component: any, target: HTMLElement) {');
   lines.push('  const fragment = document.createDocumentFragment();');

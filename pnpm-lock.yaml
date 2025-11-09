@@ -32,7 +32,7 @@ importers:
 
   packages/compiler:
     dependencies:
-      '@echo/reactivity':
+      '@arc.js/reactivity':
         specifier: workspace:*
         version: link:../reactivity
       vite:
@@ -51,10 +51,10 @@ importers:
 
   packages/core:
     dependencies:
-      '@echo/compiler':
+      '@arc.js/compiler':
         specifier: workspace:*
         version: link:../compiler
-      '@echo/reactivity':
+      '@arc.js/reactivity':
         specifier: workspace:*
         version: link:../reactivity
     devDependencies:
@@ -82,7 +82,7 @@ importers:
 
   packages/router:
     dependencies:
-      '@echo/core':
+      '@arc.js/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

@@ -1,20 +1,20 @@
 #!/bin/bash
 
 # Verbose build script that shows all errors
-echo "🚀 Building Echo Framework packages (verbose mode)..."
+echo "🚀 Building Arc.js Framework packages (verbose mode)..."
 echo ""
 
 packages=("reactivity" "utils" "compiler" "core" "router")
 failed_packages=()
 
 for package in "${packages[@]}"; do
-    echo "📦 Building @echo/$package..."
+    echo "📦 Building @arc.js/$package..."
     
     if cd "packages/$package" && npm run build; then
-        echo "✅ @echo/$package built successfully"
+        echo "✅ @arc.js/$package built successfully"
         cd - > /dev/null
     else
-        echo "❌ Failed to build @echo/$package"
+        echo "❌ Failed to build @arc.js/$package"
         failed_packages+=("$package")
         cd - > /dev/null
     fi

@@ -1,8 +1,8 @@
 {
-  "name": "@echo/router",
+  "name": "@arc.js/router",
   "version": "0.1.0",
-  "description": "Routing system for Echo Framework",
-  "keywords": ["echo", "framework", "router", "routing", "navigation"],
+  "description": "Routing system for Arc.js Framework",
+  "keywords": ["arc.js", "framework", "router", "routing", "navigation"],
   "author": "",
   "license": "MIT",
   "type": "module",
@@ -18,12 +18,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/echo-framework.git",
+    "url": "https://github.com/your-username/arc.js-framework.git",
     "directory": "packages/router"
   },
-  "homepage": "https://github.com/your-username/echo-framework#readme",
+  "homepage": "https://github.com/your-username/arc.js-framework#readme",
   "bugs": {
-    "url": "https://github.com/your-username/echo-framework/issues"
+    "url": "https://github.com/your-username/arc.js-framework/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -36,7 +36,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@echo/core": "workspace:*"
+    "@arc.js/core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.6.0",

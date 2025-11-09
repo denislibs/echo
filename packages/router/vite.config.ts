@@ -8,13 +8,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'EchoRouter',
+      name: 'ArcJsRouter',
       fileName: 'index',
       formats: ['es'],
     },
     sourcemap: true,
     rollupOptions: {
-      external: ['@echo/core'],
+      external: ['@arc.js/core'],
       output: {
         preserveModules: false,
       },

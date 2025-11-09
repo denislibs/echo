@@ -1,8 +1,8 @@
 {
-  "name": "@echo/utils",
+  "name": "@arc.js/utils",
   "version": "0.1.0",
-  "description": "Utility functions for Echo Framework",
-  "keywords": ["echo", "framework", "utils", "utilities", "helpers"],
+  "description": "Utility functions for Arc.js Framework",
+  "keywords": ["arc.js", "framework", "utils", "utilities", "helpers"],
   "author": "",
   "license": "MIT",
   "type": "module",
@@ -18,12 +18,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/echo-framework.git",
+    "url": "https://github.com/your-username/arc.js-framework.git",
     "directory": "packages/utils"
   },
-  "homepage": "https://github.com/your-username/echo-framework#readme",
+  "homepage": "https://github.com/your-username/arc.js-framework#readme",
   "bugs": {
-    "url": "https://github.com/your-username/echo-framework/issues"
+    "url": "https://github.com/your-username/arc.js-framework/issues"
   },
   "publishConfig": {
     "access": "public"

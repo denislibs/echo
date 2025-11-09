@@ -1,4 +1,4 @@
-import { signal, type Signal, type WritableSignal } from '@echo/reactivity';
+import { signal, type Signal, type WritableSignal } from '@arc.js/reactivity';
 
 export interface InputSignal<T> extends Signal<T> {
   readonly __isInput: true;

@@ -1,8 +1,8 @@
 {
-  "name": "@echo/reactivity",
+  "name": "@arc.js/reactivity",
   "version": "0.1.0",
-  "description": "Signals-based reactivity system for Echo Framework",
-  "keywords": ["echo", "framework", "reactivity", "signals", "computed", "effects"],
+  "description": "Signals-based reactivity system for Arc.js Framework",
+  "keywords": ["arc.js", "framework", "reactivity", "signals", "computed", "effects"],
   "author": "",
   "license": "MIT",
   "type": "module",
@@ -18,12 +18,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/echo-framework.git",
+    "url": "https://github.com/your-username/arc.js-framework.git",
     "directory": "packages/reactivity"
   },
-  "homepage": "https://github.com/your-username/echo-framework#readme",
+  "homepage": "https://github.com/your-username/arc.js-framework#readme",
   "bugs": {
-    "url": "https://github.com/your-username/echo-framework/issues"
+    "url": "https://github.com/your-username/arc.js-framework/issues"
   },
   "publishConfig": {
     "access": "public"

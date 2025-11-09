@@ -1,5 +1,5 @@
 // Signal type is not used directly in this file
-import { compile } from '@echo/compiler';
+import { compile } from '@arc.js/compiler';
 
 export interface ComponentOptions {
   selector: string;

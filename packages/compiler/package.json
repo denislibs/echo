@@ -1,8 +1,8 @@
 {
-  "name": "@echo/compiler",
+  "name": "@arc.js/compiler",
   "version": "0.1.0",
-  "description": "Template compiler for Echo Framework - vanishing framework approach",
-  "keywords": ["echo", "framework", "compiler", "template", "svelte-like"],
+  "description": "Template compiler for Arc.js Framework - vanishing framework approach",
+  "keywords": ["arc.js", "framework", "compiler", "template", "svelte-like"],
   "author": "",
   "license": "MIT",
   "type": "module",
@@ -18,12 +18,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/echo-framework.git",
+    "url": "https://github.com/your-username/arc.js-framework.git",
     "directory": "packages/compiler"
   },
-  "homepage": "https://github.com/your-username/echo-framework#readme",
+  "homepage": "https://github.com/your-username/arc.js-framework#readme",
   "bugs": {
-    "url": "https://github.com/your-username/echo-framework/issues"
+    "url": "https://github.com/your-username/arc.js-framework/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -36,7 +36,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@echo/reactivity": "workspace:*",
+    "@arc.js/reactivity": "workspace:*",
     "vite": "^7.0.0"
   },
   "devDependencies": {
