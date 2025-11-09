@@ -24,7 +24,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "clean": "pnpm -r clean",
     "publish:dry-run": "pnpm -r publish --dry-run",
-    "publish": "pnpm build && pnpm -r publish",
+    "publish": "pnpm install && pnpm build && pnpm -r publish",
     "version": "pnpm changeset version && pnpm install",
     "version:patch": "pnpm -r version patch",
     "version:minor": "pnpm -r version minor",
