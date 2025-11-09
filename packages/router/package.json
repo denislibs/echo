@@ -1,0 +1,47 @@
+{
+  "name": "@echo/router",
+  "version": "0.1.0",
+  "description": "Routing system for Echo Framework",
+  "keywords": ["echo", "framework", "router", "routing", "navigation"],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/echo-framework.git",
+    "directory": "packages/router"
+  },
+  "homepage": "https://github.com/your-username/echo-framework#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/echo-framework/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@echo/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vite": "^7.0.0",
+    "vitest": "^2.1.0"
+  }
+}
+

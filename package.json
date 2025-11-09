@@ -1,0 +1,47 @@
+{
+  "name": "echo-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm build:all",
+    "build:all": "pnpm build:reactivity; pnpm build:utils; pnpm build:compiler; pnpm build:core; pnpm build:router",
+    "build:watch": "pnpm -r --parallel build:watch",
+    "build:parallel": "pnpm -r --parallel --filter './packages/*' build",
+    "build:reactivity": "pnpm --filter './packages/reactivity' build",
+    "build:utils": "pnpm --filter './packages/utils' build",
+    "build:compiler": "pnpm --filter './packages/compiler' build",
+    "build:core": "pnpm --filter './packages/core' build",
+    "build:router": "pnpm --filter './packages/router' build",
+    "build:clean": "pnpm clean && pnpm build:all",
+    "build:script": "./build.sh",
+    "build:verbose": "./build-verbose.sh",
+    "dev": "pnpm -r dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "pnpm -r clean",
+    "publish:dry-run": "pnpm -r publish --dry-run",
+    "publish": "pnpm build && pnpm -r publish",
+    "version": "pnpm changeset version && pnpm install",
+    "version:patch": "pnpm -r version patch",
+    "version:minor": "pnpm -r version minor",
+    "version:major": "pnpm -r version major"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^7.0.0",
+    "vitest": "^2.1.0",
+    "@vitest/ui": "^2.1.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
+
